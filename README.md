@@ -1,5 +1,5 @@
 # Personal Home Page  Template
-I created a personal homepage for my as part of my introduction to digital with  
+I created a personal homepage as part of my introduction to digital with  
 Code Your Future. This repository content some basic:  
 * HTML
 * CSS
