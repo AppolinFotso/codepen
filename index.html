@@ -1,86 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Personal Home Page  Template</title>
-  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Personal Home Page Template</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <header id="header" class="c-site-header">
+      <h1 title="heading-one">Personal Page</h1>
+      <nav aria-label="Main Site Links.">
+        <a class="anchor" href="#main">Story</a>
+        <a class="anchor" href="#video-frame">Video</a>
+        <a class="anchor" href="#myProject">Projects</a>
+        <a class="anchor" href="#footer">Footer</a>
+      </nav>
+    </header>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<header id="header" class="c-site-header">
-  <h1 title="heading-one">Home Page</h1>
-  <nav aria-label="Main Site Links.">
+    <main id="main">
+      <div class="div-parent">
+        <h2 title="heading-two">My Story</h2>
+        <div class="div-child1">
+          <p title="paragraph-one">
+            I have a true passion for technology. When I was a little boy, I
+            used to repair broken electronic devices especially radios because
+            they were one of the most used and affordable devices at that time.
+            But after obtaining my baccalaureat, I did something different from
+            my passion because of circumstances and reality of life that the
+            majority of people faced in Africa. But my passion is still driving
+            me and I am motivated to learn as much as I can so that I can work
+            as a software developer one day and teach others who are also
+            passionate to learn. I am truly exited about learning how to code
+            and ready to face all the challenges that come with it. I want to
+            join Code Your Future firstly, because I want to become a
+            Professional Web Developer building websites and web applications.
+            Also, I want to help others to understand web technology. Secondly,
+            because Code Your Future boosted my confidence and gave me the
+            opportunity to believe in myself again which is a huge motivation
+            for me to learn more about web technology. Additionally, I would
+            like to become a professional developer because I have passion for
+            technology, I like creativity and I like to positively impact other
+            people lives. When I look at a well designed website or a web
+            application, I often ask myself how creative and fun it must be for
+            someone to have the practical knowledge to build websites or web
+            applications, I want to be that person that is the reason I believe
+            Code Your Future is the right place for me to become a professional
+            developer and hopefully create my own company in the future.
+            Furthermore, I am a hardworking, flexible and adaptable person. I am
+            motivated to complete this course because I have chosen this as my
+            profession and I will put all the effort, time, and energy to
+            achieve my dream profession.
+          </p>
+          <a href="#"
+            ><img
+              src="https://drive.google.com/uc?export=view&id=1FmYz1_N4MjzdvOf3Ye9JKAKLRHYCAhfj"
+              alt="photo of the story teller"
+          /></a>
+        </div>
 
-    <a class="anchor" href="#main">Main</a>
-    <a class="anchor" href="#frame">Video</a>
-    <a class="anchor" href="#footer">Footer</a>
+        <h2 title="heading-two">My Video</h2>
+        <div class="div-child2">
+          <iframe
+            id="video-frame"
+            title="garden tour"
+            src="//www.youtube.com/embed/u7CgbkFFGhM"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <!-- new blocks project -->
+        <h2 id="myProject">My CYF Projects</h2>
+        <div id="container">
+          <div id="bottom">
+            <div>
+              <p>Build an image carousel</p>
+              <img class="small" id="caro" />
+              <figcapture></figcapture>
+            </div>
+            <div id="corner">
+              <button id="previous">&lt;&lt; previous</button>
+              <button id="next">next &gt;&gt;</button>
+            </div>
+          </div>
+          <!-- new blocks project -->
+          <div id="comment">
+            <p id="first">Commenting</p>
 
-  </nav> 
-</header>
+            <form
+              action=""
+              class="small"
+              id="form"
+              style="padding: 10px; border-radius: 5px"
+            >
+              <p>Please leave a comment below.</p>
+              <label for="namein">Name</label>
+              <input
+                id="namein"
+                type="text"
+                placeholder="Enter your Name"
+                name="name"
+              />
+              <br /><br />
+              <label for="emailin">Email</label>
+              <input
+                id="emailin"
+                type="email"
+                placeholder="Enter your Email"
+                name="email"
+              />
+              <br /><br />
+              <textarea
+                rows="10"
+                placeholder="Enter your Comment"
+                name="comment"
+              ></textarea>
+              <br /><br />
+              <button id="submit" type="submit">Submit</button>
+            </form>
+          </div>
+          <div id="money" style="padding: 10px; padding-left: 10px">
+            <p id="first">Show Earnings and Expenses</p>
+            <div class="small">
+              <p>Earnings: <span id="earnings"></span></p>
+              <ul id="list_1"></ul>
+              <p>Expenses: <span id="expenses"></span></p>
+              <ul id="list_2"></ul>
+              <p>Balance: <span id="balance"></span></p>
+              <input id="text" />
+              <button id="button">Input</button>
+              <button id="total">Balance</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<main id="main">
-  <div class="div-parent">
-    
-    <h2 title="heading-two">My Story</h2>
-    <div class="div-child1">
-
-      <p title="paragraph-one">I have a true passion for technology. When I was a little boy, I used to try and repair broken electronic devices especially radios because they were the only affordable device at that time. But after obtaining my baccalaureat, I did something different from my passion because of circumstances and reality of life that the majority of people faced in Africa. But my passion is still driving me and I am motivated to learn as much as I can so that I can work as a software developer one day and teach others who are also passionate to learn. I am truly exited about learning how to code and ready to face all the challenges that come with it.</p>
-      <a href="#"><img src="https://drive.google.com/uc?export=view&id=1FmYz1_N4MjzdvOf3Ye9JKAKLRHYCAhfj" alt="photo of the story teller"></a>
-
-    </div>
-    
-    
-    <h2 title="heading-two">My Video</h2>
-    <div class="div-child2">
-
-      <iframe id="video-frame" title="garden tour" src="//www.youtube.com/embed/u7CgbkFFGhM" allowfullscreen>
-    
-      </iframe> 
-
-    </div>
-    
-  </div>
-</main>
-
-<footer id="footer" class="c-site-footer">
-
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Your test console.
-Don't delete!-->
-<aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
-</aside>
-<!-- partial -->
-  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
-
-</body>
+    <footer id="footer" class="c-site-footer">
+      &copy;copyright: Appolin &nbsp;&nbsp;Designed by Appolin
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
