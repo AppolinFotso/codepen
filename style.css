@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: cyan;
+html {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#header {
+  background-color: skyblue;
   margin-top: -20px;
+  border-radius: 10px;
 }
 
 h1 {
@@ -97,19 +106,16 @@ iframe {
   You must write some CSS to complete this challenge.
    ===================
 */
-body {
-  margin: 0;
-  height: 100%;
-  background-color: cyan;
-}
+/*
+
 
 /* don't edit this */
-.jest-lite-report__status--pass {
+/*.jest-lite-report__status--pass {
   background: var(--color-pass);
 }
 .jest-lite-report__errors {
   display: none;
-}
+}*/
 
 /* added code */
 #bottom,
